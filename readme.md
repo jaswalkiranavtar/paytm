@@ -6,5 +6,7 @@ Technologies choosen:
 
 
 App Endpoint:	http://localhost:8080
+
 Change Password Endpoint: http://localhost:9999/uaa/change-password
+
 Register User link:		Found on the login page
