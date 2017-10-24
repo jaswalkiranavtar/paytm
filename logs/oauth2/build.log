@@ -1,0 +1,43 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building oauth2 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ oauth2 ---
+[INFO] Deleting C:\Development\paytm\oauth2\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oauth2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ oauth2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to C:\Development\paytm\oauth2\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oauth2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Development\paytm\oauth2\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ oauth2 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ oauth2 ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ oauth2 ---
+[INFO] Building jar: C:\Development\paytm\oauth2\target\oauth2-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.5.8.RELEASE:repackage (default) @ oauth2 ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ oauth2 ---
+[INFO] Installing C:\Development\paytm\oauth2\target\oauth2-0.0.1-SNAPSHOT.jar to C:\Users\Gaurav\.m2\repository\com\paytm\oauth2\0.0.1-SNAPSHOT\oauth2-0.0.1-SNAPSHOT.jar
+[INFO] Installing C:\Development\paytm\oauth2\pom.xml to C:\Users\Gaurav\.m2\repository\com\paytm\oauth2\0.0.1-SNAPSHOT\oauth2-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.523 s
+[INFO] Finished at: 2017-10-24T19:11:26-04:00
+[INFO] Final Memory: 36M/281M
+[INFO] ------------------------------------------------------------------------
