@@ -2,36 +2,33 @@ package com.paytm.pojo;
 
 import java.time.LocalDateTime;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 public class Event {
 
     private long id;
-	private String user;
-	private EventType eventType;
-	private Outcome outcome;
-	private String operand;
+    private String user;
+    private EventType eventType;
+    private Outcome outcome;
+    private String operand;
 	@JsonSerialize(using = CustomLocalDateTimeSerializer.class)
 	@JsonDeserialize(using = CustomLocalDateTimeDeserializer.class)
 	private LocalDateTime createdDateTime;
 	
     public Event() {
-    	this.createdDateTime = LocalDateTime.now();
+    	
     }
     
     public Event(String user) {
     	this();
     	this.user = user;
+    	this.createdDateTime = LocalDateTime.now();
     }
     
     public String toString() {
     	return "User:" + this.user + 
+    			" Id:" + this.id + 
     			" EventType:" + this.eventType + 
     			" Outcome:" + this.outcome + 
     			" CreatedDateTime:" + this.createdDateTime;

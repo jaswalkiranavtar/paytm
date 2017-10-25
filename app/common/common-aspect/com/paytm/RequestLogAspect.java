@@ -1,12 +1,20 @@
 package com.paytm;
 
+import java.util.Base64;
+
+import javax.print.DocFlavor.STRING;
 import javax.servlet.http.HttpServletRequest;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.MediaType;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -34,8 +42,11 @@ public class RequestLogAspect {
         } catch (Throwable throwable) {
             throw throwable;
         } finally {
+        	String user = null;
+        	if(SecurityContextHolder.getContext() != null && SecurityContextHolder.getContext().getAuthentication() != null)
+        		user = SecurityContextHolder.getContext().getAuthentication().getName();
         	Event event = resolveEventAndOutCome(
-    			new Event(SecurityContextHolder.getContext().getAuthentication().getName()), 
+    			new Event(user), 
     			request.getRequestURI(), 
     			request.getParameter("action")
     		);
@@ -46,7 +57,18 @@ public class RequestLogAspect {
     }
     
     private void log(Event event) {
-    	System.out.println(event);
+    	String encodedAuth = Base64.getEncoder().encodeToString("user:logger".getBytes());
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("Authorization", "Basic " + encodedAuth);
+        httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+    	System.out.println(
+			new RestTemplate().exchange(
+				"http://localhost:7777/event/", 
+				HttpMethod.POST, 
+				new HttpEntity<Object>(event, httpHeaders), 
+				Event.class
+		    )
+    	);
     }
     
     private Event resolveEventAndOutCome(Event event, String uri, String action) {
