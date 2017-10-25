@@ -1,0 +1,52 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.7.RELEASE)
+
+2017-10-25 01:55:46.873  INFO 3360 --- [           main] com.gaurav.LoggerApplication             : Starting LoggerApplication v0.1-SNAPSHOT on DESKTOP-AB80SJP with PID 3360 (C:\Development\paytm\app\logger\target\logger-0.1-SNAPSHOT.jar started by Gaurav in C:\Development\paytm\app\logger)
+2017-10-25 01:55:46.879  INFO 3360 --- [           main] com.gaurav.LoggerApplication             : No active profile set, falling back to default profiles: default
+2017-10-25 01:55:46.999  INFO 3360 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e5e91e4: startup date [Wed Oct 25 01:55:46 EDT 2017]; root of context hierarchy
+2017-10-25 01:55:50.538  INFO 3360 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 7777 (http)
+2017-10-25 01:55:50.563  INFO 3360 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-25 01:55:50.565  INFO 3360 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-25 01:55:50.809  INFO 3360 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-25 01:55:50.809  INFO 3360 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3820 ms
+2017-10-25 01:55:51.318  INFO 3360 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-25 01:55:51.319  INFO 3360 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-25 01:55:51.319  INFO 3360 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-25 01:55:51.319  INFO 3360 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-25 01:55:51.321  INFO 3360 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-10-25 01:55:51.321  INFO 3360 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-25 01:55:52.448  INFO 3360 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-25 01:55:52.499  INFO 3360 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-25 01:55:52.717  INFO 3360 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-25 01:55:52.720  INFO 3360 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-10-25 01:55:52.722  INFO 3360 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-10-25 01:55:52.942  INFO 3360 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-25 01:55:53.565  INFO 3360 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-25 01:55:54.796  INFO 3360 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-10-25 01:55:54.816  INFO 3360 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-10-25 01:55:54.900  INFO 3360 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-25 01:55:56.486  INFO 3360 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e5e91e4: startup date [Wed Oct 25 01:55:46 EDT 2017]; root of context hierarchy
+2017-10-25 01:55:56.623  INFO 3360 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/event],methods=[GET]}" onto public java.lang.Iterable<com.gaurav.pojo.MyEvent> com.gaurav.controller.Controller.listAll()
+2017-10-25 01:55:56.624  INFO 3360 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/event],methods=[POST],consumes=[application/json]}" onto public com.gaurav.pojo.MyEvent com.gaurav.controller.Controller.saveAnEvent(com.gaurav.pojo.MyEvent)
+2017-10-25 01:55:56.627  INFO 3360 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-25 01:55:56.627  INFO 3360 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-25 01:55:56.699  INFO 3360 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-25 01:55:56.699  INFO 3360 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-25 01:55:56.774  INFO 3360 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-25 01:55:57.344  INFO 3360 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2017-10-25 01:55:57.475  INFO 3360 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d898981, org.springframework.security.web.context.SecurityContextPersistenceFilter@7cbd9d24, org.springframework.security.web.header.HeaderWriterFilter@5c45d770, org.springframework.security.web.authentication.logout.LogoutFilter@4416d64f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1fb19a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5026735c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10f7f7de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48d61b48, org.springframework.security.web.session.SessionManagementFilter@1bae316d, org.springframework.security.web.access.ExceptionTranslationFilter@727eb8cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53251a66]
+2017-10-25 01:55:57.728  INFO 3360 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-25 01:55:57.950  INFO 3360 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 7777 (http)
+2017-10-25 01:55:57.964  INFO 3360 --- [           main] com.gaurav.LoggerApplication             : Started LoggerApplication in 11.883 seconds (JVM running for 12.667)
+2017-10-25 01:58:25.347  INFO 3360 --- [nio-7777-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-25 01:58:25.366  INFO 3360 --- [nio-7777-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-25 01:58:25.468  INFO 3360 --- [nio-7777-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 102 ms
+2017-10-25 01:58:26.306  INFO 3360 --- [nio-7777-exec-7] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
