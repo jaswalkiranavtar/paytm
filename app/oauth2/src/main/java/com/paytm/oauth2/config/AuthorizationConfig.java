@@ -82,7 +82,7 @@ public class AuthorizationConfig extends AuthorizationServerConfigurerAdapter {
                     .accessTokenValiditySeconds(10)
                     .refreshTokenValiditySeconds(30000)
                     .secret("secret")
-                    .redirectUris("http://localhost:8080/")
+                    .redirectUris("http://localhost:8080/ui/")
                 .and()
                 .withClient("register-app")
                     .authorizedGrantTypes("client_credentials")

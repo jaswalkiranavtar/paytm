@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableOAuth2Sso
 @RestController
-public class ResourceApplication {
+public class UIApplication {
 
 	@RequestMapping("/")
 	public String home(Principal user) {
@@ -21,7 +21,7 @@ public class ResourceApplication {
 	}
 
 	public static void main(String[] args) {
-		new SpringApplicationBuilder(ResourceApplication.class).run(args);
+		new SpringApplicationBuilder(UIApplication.class).run(args);
 	}
 
 }

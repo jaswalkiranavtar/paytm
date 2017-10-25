@@ -1,3 +1,16 @@
+Steps to run:
+1. Make sure you have Java 8 and maven installed.
+2. Run this script in bash shell(I use git bash): paytm/build-and-run/all.sh
+3. Following apps will start up:
+	(a) OAuth2 server on port 9999
+	(b) User activity logger on port 7777
+	(c) UI app on port 8080
+4. Hit this endpoint to access App: http://localhost:8080/ui/
+5. Following are the other functionalities:
+	(a) Change Password Endpoint: http://localhost:9999/uaa/change-password
+	(b) Register New User: Found on the login page
+	(c) All user activity history: http://user:logger@localhost:7777/event?user={username}
+
 Technologies choosen:
 1. Java and Spring Boot: Because it is easy to quickly stand up a microservice leveraging autoconfiguration feature of spring boot. And Spring Boot Apps are jar files with tomcat server embedded insdie it. We can run Spring boot App anywhere we have JRE which makesit perfect to deploy on cloud platforms like cloud foundary and AWS.
 
@@ -5,13 +18,4 @@ Technologies choosen:
 
 3. Spring Data JPA and H2 in-memory database to store user creds. The reason I added the endpoint to change password on oauth server is that, it uses in-memory database to store credentials and any external service or process cannot access it.
 
-4. Spring AOP: To centrally manage logging of all user actions. Infact I added the Aspect to common folder so that all apps can use it. In practice it should be a seperate module in the form of jar file that any other app can use.
-
-
-App Endpoint:	http://localhost:8080
-
-Change Password Endpoint: http://localhost:9999/uaa/change-password
-
-Register User link:		Found on the login page
-
-All user activity history: http://user:logger@localhost:7777/event/{user}
+4. Spring AOP: To centrally manage logging of all user actions in all apps. Infact I added the Aspect to common folder so that both UI app and oauth2 server can use it. In practice it should be a seperate module in the form of jar file that any other app can use.
