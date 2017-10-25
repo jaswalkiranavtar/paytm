@@ -9,6 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,20 +28,20 @@ public class AccountController {
     AccountService accountService;
 
     @PreAuthorize("hasRole('TRUSTED_CLIENT')")
-    @PostMapping(path = {"/create-account"}, consumes = {"application/x-www-form-urlencoded;charset=UTF-8"})
+    @RequestMapping(method = {RequestMethod.POST}, path = {"/create-account"}, consumes = {"application/x-www-form-urlencoded;charset=UTF-8"})
     public ResponseEntity<Object> registerAccount(Account account, @RequestParam(value = "redirect_uri") String redirectUri, HttpServletRequest request, HttpServletResponse response) throws IOException {
     	try {
     		account = accountService.registerUser(account);
     	} catch (EntityExistsException eee) {
-    		response.sendRedirect("register?error");
+    		response.sendRedirect("register?action=error&redirect_uri=login");
     		return null;
     	}
-        response.sendRedirect(redirectUri + "?registration_success");
+        response.sendRedirect(redirectUri + "?action=registration_success");
         return null;
     }
 
     @PreAuthorize("isFullyAuthenticated()")
-    @GetMapping("/delete-account")
+    @RequestMapping("/delete-account")
     public ResponseEntity<GeneralController.RestMsg> removeAccount(Principal principal){
         boolean isDeleted = accountService.removeAuthenticatedAccount();
         if ( isDeleted ) {
@@ -56,14 +58,14 @@ public class AccountController {
     }
     
     @PreAuthorize("isFullyAuthenticated()")
-    @PostMapping(path = {"/change_password"}, consumes = {"application/x-www-form-urlencoded;charset=UTF-8"})
+    @RequestMapping(method = {RequestMethod.POST}, path = {"/change_password"}, consumes = {"application/x-www-form-urlencoded;charset=UTF-8"})
     public ResponseEntity<GeneralController.RestMsg> changePassword(ChangePassword changePassword, Principal principal, HttpServletResponse response) throws IOException{
     	
     	if(accountService.validatePassword(principal.getName(), changePassword.getOldPassword())) {
     		accountService.updatePassword(principal.getName(), changePassword.getNewPassword());
-    		response.sendRedirect("change-password?success");
+    		response.sendRedirect("change-password?action=success");
     	} else {
-    		response.sendRedirect("change-password?error");
+    		response.sendRedirect("change-password?action=error");
     	}
     	return null;
     }

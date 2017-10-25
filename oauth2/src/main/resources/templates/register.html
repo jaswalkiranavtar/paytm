@@ -12,7 +12,7 @@
                     <fieldset style="text-align: center;">
                         <h1>Register</h1>
     
-                        <div th:if="${param.error}">
+                        <div th:if="${#strings.equals(action, 'error')}">
                             <div class="alert alert-danger">
                                 User with this name already exists.
                             </div>
