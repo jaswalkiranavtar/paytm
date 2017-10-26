@@ -1,0 +1,215 @@
+@font-face {
+	font-family: fira-sans;
+	src: url("../fonts/FiraSans-Regular.woff")
+}
+
+body
+{
+	margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    font-family: fira-sans;
+}
+
+.hidden
+{
+	display: none;
+}
+
+.dashboardList
+{
+	display: table-row;
+}
+.titleRow
+{
+	display: table;
+	width: 100%;
+	height: 50px;
+	margin-left: 20px;
+	padding: 5px;
+}
+.logos
+{
+	display: table-cell;
+    font-size: 2.2em;
+    height: 40px;
+    width: 50px;
+    vertical-align: middle;
+}
+.titleText
+{
+	display: table-cell;
+	font-size: 2.2em;
+    height:40px;
+    vertical-align: middle;
+}
+
+
+.rbcLogo
+{
+	height: 40px;
+}
+.midTierLogo
+{
+	height: 45px;
+}
+.buttonRow
+{
+    display: table;
+    width: 100%;
+    height: 30px;
+    color: rgb(30, 98, 195);
+    background-color: white;
+    vertical-align: middle;
+}
+.dashboardItem
+{
+    display: table-cell;
+    cursor: pointer;
+    height: 46px;
+    text-align: center;
+    vertical-align: middle;
+}
+.title
+{
+	width: 100%;
+    height: 110px;
+    background-color: rgb(30, 98, 195);
+    color: #ffffff;
+    margin: 0px;
+}
+
+.warning
+{
+	margin-left: 20px;
+	padding: 5px;
+}
+
+.frame
+{
+	width: 100%;
+    height: calc(100% - 125px);
+}
+
+.innerFrame
+{
+	width: 100%;
+	height: 100%;
+	border: 0px;
+}
+.user-profile
+{
+    display: table-cell;
+    width: 200px;
+    vertical-align: top;
+}
+.user-name
+{
+	display: inline-block;
+}
+
+.square-icon
+{
+	-webkit-user-select: none;
+    position: relative;
+    font-size: 0.8em !important;
+    display: inline-block;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    margin-top: 4px;
+    padding-right: 8px;
+    vertical-align: middle;
+    height: 20px;
+}
+.first
+{
+	color: rgb(170, 186, 10);
+}
+.selected1
+{
+	border-bottom: 3px solid rgb(170, 186, 10);
+	background-color: #ecf0f1;
+    box-shadow: rgba(51, 51, 51, 0.117647) 0px 1px 6px, rgba(51, 51, 51, 0.117647) 0px 1px 4px;
+}
+.second
+{
+	color: rgb(170, 0, 221);
+}
+
+.selected2
+{
+	border-bottom: 3px solid rgb(170, 0, 221);
+	background-color: #ecf0f1;
+    box-shadow: rgba(51, 51, 51, 0.117647) 0px 1px 6px, rgba(51, 51, 51, 0.117647) 0px 1px 4px;
+}
+.third
+{
+	color: rgb(81, 181, 224);
+}
+.selected3
+{
+	border-bottom: 3px solid rgb(81, 181, 224);
+	background-color: #ecf0f1;
+    box-shadow: rgba(51, 51, 51, 0.117647) 0px 1px 6px, rgba(51, 51, 51, 0.117647) 0px 1px 4px;
+}
+.fourth
+{
+	color: rgb(252, 163, 17);
+}
+.selected4
+{
+	border-bottom: 3px solid rgb(252, 163, 17);
+	background-color: #ecf0f1;
+    box-shadow: rgba(51, 51, 51, 0.117647) 0px 1px 6px, rgba(51, 51, 51, 0.117647) 0px 1px 4px;
+}
+
+.chooseFileButton
+{
+	display:block;
+	margin: 20px 20px;
+	width: 100%;
+}
+
+.clearDbAndLoadRow
+{
+	width: 600px;
+    margin-left: 20px;
+    padding: 5px;
+}
+.clearDbAndLoadRowButton
+{
+	background-color: #1e62c3 !important;
+	color: #fff;
+	margin-top: 20px;
+	margin-left: auto;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button
+{
+	background-color: #ccc;
+    border: 0px;
+    padding: 10px;
+    display:block;
+}
+
+.addFileChooser
+{
+	background-color: #ccc;
+    border: 0px;
+    padding: 0px 10px 0px 10px;
+    margin-left: auto;
+    width: 20px;
+    font-size: 2.2em;
+}
+
+.addFiles
+{
+	width: 600px;
+	background-color: rgb(242,242,246);
+	margin-left: 20px;
+	padding: 5px;
+}
+
+.resetTitle
+{
+	color: #1e62c3;
+}

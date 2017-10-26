@@ -7,6 +7,12 @@
 [INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ logger ---
 [INFO] Deleting C:\Development\paytm\app\logger\target
 [INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:add-source (add-source) @ logger ---
+[INFO] Source directory: C:\Development\paytm\app\common\common-pojo added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:add-test-source (add-test-source) @ logger ---
+[INFO] Test Source directory: C:\Development\paytm\app\common\common-pojo added.
+[INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ logger ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 1 resource
@@ -14,17 +20,17 @@
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ logger ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 7 source files to C:\Development\paytm\app\logger\target\classes
+[INFO] Compiling 9 source files to C:\Development\paytm\app\logger\target\classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ logger ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory C:\Development\paytm\app\logger\src\test\resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ logger ---
-[INFO] No sources to compile
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to C:\Development\paytm\app\logger\target\test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ logger ---
-[INFO] No tests to run.
 [INFO] 
 [INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ logger ---
 [INFO] Building jar: C:\Development\paytm\app\logger\target\logger-0.1-SNAPSHOT.jar
@@ -37,7 +43,7 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.554 s
-[INFO] Finished at: 2017-10-25T01:55:44-04:00
-[INFO] Final Memory: 34M/212M
+[INFO] Total time: 6.320 s
+[INFO] Finished at: 2017-10-25T21:29:25-04:00
+[INFO] Final Memory: 35M/290M
 [INFO] ------------------------------------------------------------------------

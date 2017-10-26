@@ -1,4 +1,4 @@
-package com.gaurav.resource;
+package com.paytm;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

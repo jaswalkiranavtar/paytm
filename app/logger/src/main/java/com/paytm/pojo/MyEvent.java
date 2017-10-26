@@ -18,7 +18,7 @@ public class MyEvent extends Event{
     }
 	
 	@Override
-	public EventType getEventType() {
+	public String getEventType() {
 		return super.getEventType();
 	}
 	
@@ -28,7 +28,7 @@ public class MyEvent extends Event{
 	}
     
 	@Override
-	public Outcome getOutcome() {
+	public String getOutcome() {
 		return super.getOutcome();
 	}
 	

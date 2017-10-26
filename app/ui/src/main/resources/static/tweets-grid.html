@@ -1,0 +1,13 @@
+<table class="linksTableClass" id="linksTableClass">
+    <tr class="linksTableHeaderClass">
+        <th>ID</th>
+        <th>From User</th>
+        <th>Text</th>
+    </tr>
+    <tr class="animate-repeat" ng-repeat="searchResult in searchResults | filter:searchText as filtered" 
+    ng-class-even="'linksTableEvenRowClass'" ng-class-odd="'linksTableOddRowClass'">
+        <td>{{searchResult.id}}</td>
+        <td>{{searchResult.fromUser}}</td>
+        <td>{{searchResult.text}}</td>
+    </tr>
+</table>

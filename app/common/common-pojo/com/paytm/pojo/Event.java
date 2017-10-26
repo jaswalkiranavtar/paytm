@@ -9,8 +9,8 @@ public class Event {
 
     private long id;
     private String user;
-    private EventType eventType;
-    private Outcome outcome;
+    private String eventType;
+    private String outcome;
     private String operand;
 	@JsonSerialize(using = CustomLocalDateTimeSerializer.class)
 	@JsonDeserialize(using = CustomLocalDateTimeDeserializer.class)
@@ -20,9 +20,10 @@ public class Event {
     	
     }
     
-    public Event(String user) {
-    	this();
+    public Event(String user, String eventType, String outcome) {
     	this.user = user;
+    	this.eventType = eventType;
+    	this.outcome = outcome;
     	this.createdDateTime = LocalDateTime.now();
     }
     
@@ -50,14 +51,6 @@ public class Event {
 		this.user = user;
 	}
 
-	public EventType getEventType() {
-		return eventType;
-	}
-
-	public void setEventType(EventType eventType) {
-		this.eventType = eventType;
-	}
-
 	public String getOperand() {
 		return operand;
 	}
@@ -74,11 +67,19 @@ public class Event {
 		this.createdDateTime = createdDateTime;
 	}
 
-	public Outcome getOutcome() {
+	public String getEventType() {
+		return eventType;
+	}
+
+	public void setEventType(String eventType) {
+		this.eventType = eventType;
+	}
+
+	public String getOutcome() {
 		return outcome;
 	}
 
-	public void setOutcome(Outcome outcome) {
+	public void setOutcome(String outcome) {
 		this.outcome = outcome;
 	}
 }

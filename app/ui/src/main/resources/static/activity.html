@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>User Activity Log</title>
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+<script src="./js/angular.min.js"></script>
+</head>
+<body ng-app="activityApp">
+<div>
+    <div ng-controller="contentCtrl" class="ng-scope">
+        <result-panel></result-panel>
+        <div class="all-links">
+        	<all-tabs></all-tabs>
+            <div id="tabcontent" class="tabcontent">
+                <div id="loader" class="loader"></div>
+                <content-grid></content-grid>
+            </div>
+        </div>
+    </div>
+</div>    
+<script src="./js/activity.js">
+</script>
+</body>
+</html>

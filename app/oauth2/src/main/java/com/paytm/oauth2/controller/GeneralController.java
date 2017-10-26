@@ -17,7 +17,6 @@ public class GeneralController {
 		return principal;	
 	}
 
-    // A helper class to make our controller output look nice
     public static class RestMsg {
         private String msg;
         public RestMsg(String msg) {

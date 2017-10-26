@@ -1,0 +1,19 @@
+<table class="linksTableClass" id="linksTableClass">
+    <tr class="linksTableHeaderClass">
+        <th>ID</th>
+        <th>User Name</th>
+        <th>Event Type</th>
+        <th>Outcome</th>
+        <th>Operand</th>
+        <th>Created Time</th>
+    </tr>
+    <tr class="animate-repeat" ng-repeat="log in logs | filter:searchText as filtered" 
+    ng-class-even="'linksTableEvenRowClass'" ng-class-odd="'linksTableOddRowClass'">
+        <td>{{log.id}}</td>
+        <td>{{log.user}}</td>
+        <td>{{log.eventType}}</td>
+        <td>{{log.outcome}}</td>
+        <td>{{log.operand}}</td>
+        <td>{{log.createdDateTime}}</td>
+    </tr>
+</table>

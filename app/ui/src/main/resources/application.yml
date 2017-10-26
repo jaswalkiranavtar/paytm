@@ -15,3 +15,10 @@ logging:
     
 server:
   context-path: /ui
+  port: 8080
+  
+spring:
+  social:
+    twitter:
+      appId: hUBIB6xTeiKPFCNozXzsSvi0r
+      appSecret: 0tAnzTNTsqlY4Al3leRaXy6ESjQvq8nJWKz6lISXlEcRy1597t

@@ -1,5 +1,5 @@
-2017-10-25 01:55:33.981  INFO 1100 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1: startup date [Wed Oct 25 01:55:33 EDT 2017]; root of context hierarchy
-2017-10-25 01:55:34.430  INFO 1100 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6c129346] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-25 21:29:14.265  INFO 9904 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1: startup date [Wed Oct 25 21:29:14 EDT 2017]; root of context hierarchy
+2017-10-25 21:29:14.735  INFO 9904 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6c129346] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -9,637 +9,106 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.5.8.RELEASE)
 
-2017-10-25 01:55:34.885  INFO 1100 --- [           main] com.paytm.oauth2.Oauth2Application       : No active profile set, falling back to default profiles: default
-2017-10-25 01:55:34.900  INFO 1100 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6325a3ee: startup date [Wed Oct 25 01:55:34 EDT 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1
-2017-10-25 01:55:36.382  INFO 1100 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=29607e28-9eff-3453-b200-d69a45d8ce21
-2017-10-25 01:55:36.595  INFO 1100 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4ff89049] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-10-25 01:55:36.729  INFO 1100 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'security.oauth2.client-org.springframework.boot.autoconfigure.security.oauth2.OAuth2ClientProperties' of type [org.springframework.boot.autoconfigure.security.oauth2.OAuth2ClientProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-10-25 01:55:36.735  INFO 1100 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.security.oauth2.OAuth2AutoConfiguration' of type [org.springframework.boot.autoconfigure.security.oauth2.OAuth2AutoConfiguration$$EnhancerBySpringCGLIB$$7424c49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-10-25 01:55:36.753  INFO 1100 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'resourceServerProperties' of type [org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-10-25 01:55:36.770  INFO 1100 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6c129346] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-10-25 01:55:37.213  INFO 1100 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9999 (http)
-2017-10-25 01:55:37.233  INFO 1100 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2017-10-25 01:55:37.235  INFO 1100 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
-2017-10-25 01:55:37.462  INFO 1100 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/uaa]    : Initializing Spring embedded WebApplicationContext
-2017-10-25 01:55:37.462  INFO 1100 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2562 ms
-2017-10-25 01:55:37.955  INFO 1100 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
-2017-10-25 01:55:37.955  INFO 1100 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-10-25 01:55:37.955  INFO 1100 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-10-25 01:55:37.955  INFO 1100 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-10-25 01:55:37.955  INFO 1100 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2017-10-25 01:55:37.957  INFO 1100 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
-2017-10-25 01:55:37.958  INFO 1100 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
-2017-10-25 01:55:37.958  INFO 1100 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
-2017-10-25 01:55:37.958  INFO 1100 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2017-10-25 01:55:37.960  INFO 1100 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
-2017-10-25 01:55:39.127  INFO 1100 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2017-10-25 01:55:39.166  INFO 1100 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2017-10-25 21:29:15.178  INFO 9904 --- [           main] com.paytm.Oauth2Application              : No active profile set, falling back to default profiles: default
+2017-10-25 21:29:15.198  INFO 9904 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f28c152: startup date [Wed Oct 25 21:29:15 EDT 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1
+2017-10-25 21:29:16.789  INFO 9904 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8a306b2c-5a16-39eb-a618-a0e1ca8eb7a8
+2017-10-25 21:29:17.084  INFO 9904 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4ff89049] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-25 21:29:17.508  INFO 9904 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'security.oauth2.client-org.springframework.boot.autoconfigure.security.oauth2.OAuth2ClientProperties' of type [org.springframework.boot.autoconfigure.security.oauth2.OAuth2ClientProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-25 21:29:17.518  INFO 9904 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.security.oauth2.OAuth2AutoConfiguration' of type [org.springframework.boot.autoconfigure.security.oauth2.OAuth2AutoConfiguration$$EnhancerBySpringCGLIB$$7424c49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-25 21:29:17.542  INFO 9904 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'resourceServerProperties' of type [org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-25 21:29:17.574  INFO 9904 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6c129346] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-25 21:29:18.140  INFO 9904 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9999 (http)
+2017-10-25 21:29:18.159  INFO 9904 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-25 21:29:18.161  INFO 9904 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-25 21:29:18.291  INFO 9904 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/uaa]    : Initializing Spring embedded WebApplicationContext
+2017-10-25 21:29:18.291  INFO 9904 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3093 ms
+2017-10-25 21:29:19.374  INFO 9904 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-10-25 21:29:19.374  INFO 9904 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-25 21:29:19.375  INFO 9904 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-25 21:29:19.375  INFO 9904 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-25 21:29:19.375  INFO 9904 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-25 21:29:19.377  INFO 9904 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-10-25 21:29:19.378  INFO 9904 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-10-25 21:29:19.378  INFO 9904 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-10-25 21:29:19.378  INFO 9904 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-25 21:29:19.381  INFO 9904 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-10-25 21:29:21.323  INFO 9904 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-25 21:29:21.374  INFO 9904 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2017-10-25 01:55:39.377  INFO 1100 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
-2017-10-25 01:55:39.379  INFO 1100 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2017-10-25 01:55:39.381  INFO 1100 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2017-10-25 01:55:39.513  INFO 1100 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2017-10-25 01:55:40.345  INFO 1100 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2017-10-25 01:55:41.137  WARN 1100 --- [           main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
-2017-10-25 01:55:41.895  INFO 1100 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
-2017-10-25 01:55:41.936  INFO 1100 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
-2017-10-25 01:55:42.042  INFO 1100 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2017-10-25 01:55:44.002 DEBUG 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Looking for request mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6325a3ee: startup date [Wed Oct 25 01:55:34 EDT 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1
-2017-10-25 01:55:44.050 DEBUG 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : 2 request handler methods found on class org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint: {public org.springframework.web.servlet.View org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.approveOrDeny(java.util.Map,java.util.Map,org.springframework.web.bind.support.SessionStatus,java.security.Principal)={[/oauth/authorize],methods=[POST],params=[user_oauth_approval]}, public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.authorize(java.util.Map,java.util.Map,org.springframework.web.bind.support.SessionStatus,java.security.Principal)={[/oauth/authorize]}}
-2017-10-25 01:55:44.051  INFO 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/authorize],methods=[POST],params=[user_oauth_approval]}" onto public org.springframework.web.servlet.View org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.approveOrDeny(java.util.Map<java.lang.String, java.lang.String>,java.util.Map<java.lang.String, ?>,org.springframework.web.bind.support.SessionStatus,java.security.Principal)
-2017-10-25 01:55:44.054  INFO 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/authorize]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.authorize(java.util.Map<java.lang.String, java.lang.Object>,java.util.Map<java.lang.String, java.lang.String>,org.springframework.web.bind.support.SessionStatus,java.security.Principal)
-2017-10-25 01:55:44.056 DEBUG 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : 2 request handler methods found on class org.springframework.security.oauth2.provider.endpoint.TokenEndpoint: {public org.springframework.http.ResponseEntity org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.getAccessToken(java.security.Principal,java.util.Map) throws org.springframework.web.HttpRequestMethodNotSupportedException={[/oauth/token],methods=[GET]}, public org.springframework.http.ResponseEntity org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(java.security.Principal,java.util.Map) throws org.springframework.web.HttpRequestMethodNotSupportedException={[/oauth/token],methods=[POST]}}
-2017-10-25 01:55:44.057  INFO 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/token],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.getAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2017-10-25 01:55:44.058  INFO 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/token],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2017-10-25 01:55:44.059 DEBUG 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : 1 request handler methods found on class org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint: {public java.util.Map org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint.checkToken(java.lang.String)={[/oauth/check_token]}}
-2017-10-25 01:55:44.059  INFO 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/check_token]}" onto public java.util.Map<java.lang.String, ?> org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint.checkToken(java.lang.String)
-2017-10-25 01:55:44.060 DEBUG 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : 1 request handler methods found on class org.springframework.security.oauth2.provider.endpoint.WhitelabelApprovalEndpoint: {public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelApprovalEndpoint.getAccessConfirmation(java.util.Map,javax.servlet.http.HttpServletRequest) throws java.lang.Exception={[/oauth/confirm_access]}}
-2017-10-25 01:55:44.060  INFO 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/confirm_access]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelApprovalEndpoint.getAccessConfirmation(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
-2017-10-25 01:55:44.061 DEBUG 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : 1 request handler methods found on class org.springframework.security.oauth2.provider.endpoint.WhitelabelErrorEndpoint: {public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelErrorEndpoint.handleError(javax.servlet.http.HttpServletRequest)={[/oauth/error]}}
-2017-10-25 01:55:44.061  INFO 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/error]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelErrorEndpoint.handleError(javax.servlet.http.HttpServletRequest)
-2017-10-25 01:55:44.073 DEBUG 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : 1 request handler methods found on class org.springframework.security.oauth2.provider.endpoint.TokenKeyEndpoint: {public java.util.Map org.springframework.security.oauth2.provider.endpoint.TokenKeyEndpoint.getKey(java.security.Principal)={[/oauth/token_key],methods=[GET]}}
-2017-10-25 01:55:44.074  INFO 1100 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/token_key],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.security.oauth2.provider.endpoint.TokenKeyEndpoint.getKey(java.security.Principal)
-2017-10-25 01:55:45.596  INFO 1100 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33617539, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f7a7219, org.springframework.security.web.header.HeaderWriterFilter@61078690, org.springframework.security.web.authentication.logout.LogoutFilter@664a9613, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1fc0053e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a1d593e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7859e786, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c177f9e, org.springframework.security.web.session.SessionManagementFilter@403132fc, org.springframework.security.web.access.ExceptionTranslationFilter@2f162cc0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2416a51]
-2017-10-25 01:55:45.599  INFO 1100 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21c64522, org.springframework.security.web.context.SecurityContextPersistenceFilter@8a589a2, org.springframework.security.web.header.HeaderWriterFilter@1bdf8190, org.springframework.security.web.authentication.logout.LogoutFilter@b672aa8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2fab4aff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c65a5ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b5176f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7997b197, org.springframework.security.web.session.SessionManagementFilter@192f2f27, org.springframework.security.web.access.ExceptionTranslationFilter@4f8969b0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29cfd92b]
-2017-10-25 01:55:45.662  INFO 1100 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete-account]}" onto public org.springframework.http.ResponseEntity<com.paytm.oauth2.controllers.GeneralController$RestMsg> com.paytm.oauth2.controllers.AccountController.removeAccount(java.security.Principal)
-2017-10-25 01:55:45.663  INFO 1100 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create-account],methods=[POST],consumes=[application/x-www-form-urlencoded;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.paytm.oauth2.controllers.AccountController.registerAccount(com.paytm.oauth2.models.Account,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
-2017-10-25 01:55:45.663  INFO 1100 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/change_password],methods=[POST],consumes=[application/x-www-form-urlencoded;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.paytm.oauth2.controllers.GeneralController$RestMsg> com.paytm.oauth2.controllers.AccountController.changePassword(com.paytm.oauth2.models.ChangePassword,java.security.Principal,javax.servlet.http.HttpServletResponse) throws java.io.IOException
-2017-10-25 01:55:45.663  INFO 1100 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public com.paytm.oauth2.controllers.GeneralController$RestMsg com.paytm.oauth2.controllers.GeneralController.hello()
-2017-10-25 01:55:45.663  INFO 1100 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/me]}" onto public java.security.Principal com.paytm.oauth2.controllers.GeneralController.user(java.security.Principal)
-2017-10-25 01:55:45.665  INFO 1100 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register]}" onto public java.lang.String com.paytm.oauth2.controllers.MVCController.register(java.lang.String,org.springframework.ui.Model)
-2017-10-25 01:55:45.665  INFO 1100 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.paytm.oauth2.controllers.MVCController.login(java.lang.String,org.springframework.ui.Model)
-2017-10-25 01:55:45.665  INFO 1100 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/change-password]}" onto public java.lang.String com.paytm.oauth2.controllers.MVCController.changePassword(java.lang.String,org.springframework.ui.Model)
-2017-10-25 01:55:45.668  INFO 1100 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-10-25 01:55:45.669  INFO 1100 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-10-25 01:55:45.731  INFO 1100 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-10-25 01:55:45.732  INFO 1100 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-10-25 01:55:45.769  INFO 1100 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-10-25 01:55:46.571  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
-2017-10-25 01:55:46.572  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
-2017-10-25 01:55:46.573  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-25 01:55:46.574  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-25 01:55:46.575  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-25 01:55:46.576  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
-2017-10-25 01:55:46.576  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-25 01:55:46.578  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
-2017-10-25 01:55:46.578  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
-2017-10-25 01:55:46.579  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
-2017-10-25 01:55:46.580  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-25 01:55:46.580  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-25 01:55:46.581  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
-2017-10-25 01:55:46.583  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-25 01:55:46.586  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
-2017-10-25 01:55:46.586  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
-2017-10-25 01:55:46.586  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-25 01:55:46.588  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
-2017-10-25 01:55:46.588  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-25 01:55:46.589  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
-2017-10-25 01:55:46.591  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
-2017-10-25 01:55:46.591  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-25 01:55:46.592  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
-2017-10-25 01:55:46.592  INFO 1100 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-25 01:55:46.596  INFO 1100 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@11a82d0f, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1adb7478, org.springframework.security.web.context.SecurityContextPersistenceFilter@74bdc168, org.springframework.security.web.header.HeaderWriterFilter@76a82f33, org.springframework.web.filter.CorsFilter@3ae66c85, org.springframework.security.web.authentication.logout.LogoutFilter@611f8234, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@b91d8c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@644c78d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@532a02d9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16943e88, org.springframework.security.web.session.SessionManagementFilter@6bab2585, org.springframework.security.web.access.ExceptionTranslationFilter@1922e6d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7807ac2c]
-2017-10-25 01:55:46.642  INFO 1100 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: com.paytm.oauth2.security.ResourceConfig$OAuthRequestedMatcher@430fa4ef, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1761de10, org.springframework.security.web.context.SecurityContextPersistenceFilter@edf4f36, org.springframework.security.web.header.HeaderWriterFilter@1500e009, org.springframework.security.web.authentication.logout.LogoutFilter@13e9f2e2, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@cd7f1ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29d334c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@100f9bbe, org.springframework.security.web.session.SessionManagementFilter@1fd386c3, org.springframework.security.web.access.ExceptionTranslationFilter@3956b302, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@238ad8c]
-2017-10-25 01:55:46.695  INFO 1100 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56f2bbea, org.springframework.security.web.context.SecurityContextPersistenceFilter@778ca8ef, org.springframework.security.web.header.HeaderWriterFilter@7de4a01f, org.springframework.security.web.csrf.CsrfFilter@1358b28e, org.springframework.security.web.authentication.logout.LogoutFilter@261d8190, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1f14f20c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@208e9ef6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78b236a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78f9ed3e, org.springframework.security.web.session.SessionManagementFilter@2bfeb1ef, org.springframework.security.web.access.ExceptionTranslationFilter@19f9d595, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@263558c9]
-2017-10-25 01:55:46.743  WARN 1100 --- [           main] o.s.s.c.a.web.builders.WebSecurity       : 
-
-********************************************************************
-**********        Security debugging is enabled.       *************
-**********    This may include sensitive information.  *************
-**********      Do not use in a production system!     *************
-********************************************************************
-
-
-2017-10-25 01:55:47.636  INFO 1100 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6325a3ee: startup date [Wed Oct 25 01:55:34 EDT 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1
-2017-10-25 01:55:49.584  INFO 1100 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2017-10-25 01:55:49.597  INFO 1100 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
-2017-10-25 01:55:49.598  INFO 1100 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
-2017-10-25 01:55:49.599  INFO 1100 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
-2017-10-25 01:55:49.599  INFO 1100 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
-2017-10-25 01:55:49.600  INFO 1100 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
-2017-10-25 01:55:49.604  INFO 1100 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
-2017-10-25 01:55:49.623  INFO 1100 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
-2017-10-25 01:55:49.640  INFO 1100 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
-2017-10-25 01:55:49.658  INFO 1100 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6325a3ee,type=ConfigurationPropertiesRebinder]
-2017-10-25 01:55:49.668  INFO 1100 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
-2017-10-25 01:55:49.850  INFO 1100 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
-2017-10-25 01:55:50.306  INFO 1100 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9999 (http)
-2017-10-25 01:55:50.380  INFO 1100 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2017-10-25 01:55:51.297  INFO 1100 --- [           main] com.paytm.oauth2.Oauth2Application       : Started Oauth2Application in 18.141 seconds (JVM running for 18.686)
-2017-10-25 01:56:47.857  INFO 1100 --- [nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/uaa]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2017-10-25 01:56:47.858  INFO 1100 --- [nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
-2017-10-25 01:56:47.970  INFO 1100 --- [nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 112 ms
-2017-10-25 01:56:48.340  INFO 1100 --- [nio-9999-exec-1] Spring Security Debugger                 : 
-
-************************************************************
-
-Request received for GET '/oauth/authorize?client_id=trusted-app&redirect_uri=http://localhost:8080/login&response_type=code&state=0PeZqX':
-
-org.apache.catalina.connector.RequestFacade@1dc14676
-
-servletPath:/oauth/authorize
-pathInfo:null
-headers: 
-host: localhost:9999
-connection: keep-alive
-user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-upgrade-insecure-requests: 1
-accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
-accept-encoding: gzip, deflate, br
-accept-language: en-CA,en-GB;q=0.8,en-US;q=0.6,en;q=0.4
-cookie: JSESSIONID=1BA6CC26FCAEEBE6212E9E3EDEF6A5C3
-
-
-Security filter chain: [
-  WebAsyncManagerIntegrationFilter
-  SecurityContextPersistenceFilter
-  HeaderWriterFilter
-  CsrfFilter
-  LogoutFilter
-  UsernamePasswordAuthenticationFilter
-  RequestCacheAwareFilter
-  SecurityContextHolderAwareRequestFilter
-  AnonymousAuthenticationFilter
-  SessionManagementFilter
-  ExceptionTranslationFilter
-  FilterSecurityInterceptor
-]
-
-
-************************************************************
-
-
-2017-10-25 01:56:49.146  INFO 1100 --- [nio-9999-exec-1] Spring Security Debugger                 : 
-
-************************************************************
-
-New HTTP session created: E314DFBAC67BE87C54B9F64C3089D60C
-
-Call stack: 
-
-	at org.springframework.security.web.debug.Logger.info(Logger.java:44)
-	at org.springframework.security.web.debug.DebugRequestWrapper.getSession(DebugFilter.java:166)
-	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:240)
-	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:240)
-	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:240)
-	at org.springframework.security.web.savedrequest.HttpSessionRequestCache.saveRequest(HttpSessionRequestCache.java:59)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.sendStartAuthentication(ExceptionTranslationFilter.java:201)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.handleSpringSecurityException(ExceptionTranslationFilter.java:177)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:133)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
-	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
-	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
-	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-
-
-************************************************************
-
-
-2017-10-25 01:56:49.483  INFO 1100 --- [nio-9999-exec-1] Spring Security Debugger                 : 
-
-************************************************************
-
-Request received for GET '/login':
-
-org.apache.catalina.connector.RequestFacade@1dc14676
-
-servletPath:/login
-pathInfo:null
-headers: 
-host: localhost:9999
-connection: keep-alive
-user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-upgrade-insecure-requests: 1
-accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
-accept-encoding: gzip, deflate, br
-accept-language: en-CA,en-GB;q=0.8,en-US;q=0.6,en;q=0.4
-cookie: JSESSIONID=E314DFBAC67BE87C54B9F64C3089D60C; JSESSIONID=1BA6CC26FCAEEBE6212E9E3EDEF6A5C3
-
-
-Security filter chain: [
-  WebAsyncManagerIntegrationFilter
-  SecurityContextPersistenceFilter
-  HeaderWriterFilter
-  CsrfFilter
-  LogoutFilter
-  UsernamePasswordAuthenticationFilter
-  RequestCacheAwareFilter
-  SecurityContextHolderAwareRequestFilter
-  AnonymousAuthenticationFilter
-  SessionManagementFilter
-  ExceptionTranslationFilter
-  FilterSecurityInterceptor
-]
-
-
-************************************************************
-
-
-2017-10-25 01:58:03.107  INFO 1100 --- [nio-9999-exec-3] Spring Security Debugger                 : 
-
-************************************************************
-
-Request received for GET '/oauth/authorize?client_id=trusted-app&redirect_uri=http://localhost:8080/login&response_type=code&state=3DiQLr':
-
-org.apache.catalina.connector.RequestFacade@1dc14676
-
-servletPath:/oauth/authorize
-pathInfo:null
-headers: 
-host: localhost:9999
-connection: keep-alive
-user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-upgrade-insecure-requests: 1
-accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
-accept-encoding: gzip, deflate, br
-accept-language: en-CA,en-GB;q=0.8,en-US;q=0.6,en;q=0.4
-cookie: JSESSIONID=E314DFBAC67BE87C54B9F64C3089D60C; JSESSIONID=1BA6CC26FCAEEBE6212E9E3EDEF6A5C3
-
-
-Security filter chain: [
-  WebAsyncManagerIntegrationFilter
-  SecurityContextPersistenceFilter
-  HeaderWriterFilter
-  CsrfFilter
-  LogoutFilter
-  UsernamePasswordAuthenticationFilter
-  RequestCacheAwareFilter
-  SecurityContextHolderAwareRequestFilter
-  AnonymousAuthenticationFilter
-  SessionManagementFilter
-  ExceptionTranslationFilter
-  FilterSecurityInterceptor
-]
-
-
-************************************************************
-
-
-2017-10-25 01:58:03.118  INFO 1100 --- [nio-9999-exec-4] Spring Security Debugger                 : 
-
-************************************************************
-
-Request received for GET '/login':
-
-org.apache.catalina.connector.RequestFacade@1dc14676
-
-servletPath:/login
-pathInfo:null
-headers: 
-host: localhost:9999
-connection: keep-alive
-user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-upgrade-insecure-requests: 1
-accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
-accept-encoding: gzip, deflate, br
-accept-language: en-CA,en-GB;q=0.8,en-US;q=0.6,en;q=0.4
-cookie: JSESSIONID=E314DFBAC67BE87C54B9F64C3089D60C; JSESSIONID=1BA6CC26FCAEEBE6212E9E3EDEF6A5C3
-
-
-Security filter chain: [
-  WebAsyncManagerIntegrationFilter
-  SecurityContextPersistenceFilter
-  HeaderWriterFilter
-  CsrfFilter
-  LogoutFilter
-  UsernamePasswordAuthenticationFilter
-  RequestCacheAwareFilter
-  SecurityContextHolderAwareRequestFilter
-  AnonymousAuthenticationFilter
-  SessionManagementFilter
-  ExceptionTranslationFilter
-  FilterSecurityInterceptor
-]
-
-
-************************************************************
-
-
-2017-10-25 01:58:07.530  INFO 1100 --- [nio-9999-exec-6] Spring Security Debugger                 : 
-
-************************************************************
-
-Request received for POST '/login':
-
-org.apache.catalina.connector.RequestFacade@1dc14676
-
-servletPath:/login
-pathInfo:null
-headers: 
-host: localhost:9999
-connection: keep-alive
-content-length: 74
-cache-control: max-age=0
-origin: http://localhost:9999
-upgrade-insecure-requests: 1
-content-type: application/x-www-form-urlencoded
-user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
-referer: http://localhost:9999/uaa/login
-accept-encoding: gzip, deflate, br
-accept-language: en-CA,en-GB;q=0.8,en-US;q=0.6,en;q=0.4
-cookie: JSESSIONID=E314DFBAC67BE87C54B9F64C3089D60C; JSESSIONID=1BA6CC26FCAEEBE6212E9E3EDEF6A5C3
-
-
-Security filter chain: [
-  WebAsyncManagerIntegrationFilter
-  SecurityContextPersistenceFilter
-  HeaderWriterFilter
-  CsrfFilter
-  LogoutFilter
-  UsernamePasswordAuthenticationFilter
-  RequestCacheAwareFilter
-  SecurityContextHolderAwareRequestFilter
-  AnonymousAuthenticationFilter
-  SessionManagementFilter
-  ExceptionTranslationFilter
-  FilterSecurityInterceptor
-]
-
-
-************************************************************
-
-
-2017-10-25 01:58:08.103  INFO 1100 --- [nio-9999-exec-7] Spring Security Debugger                 : 
-
-************************************************************
-
-Request received for GET '/oauth/authorize?client_id=trusted-app&redirect_uri=http://localhost:8080/login&response_type=code&state=3DiQLr':
-
-org.apache.catalina.connector.RequestFacade@1dc14676
-
-servletPath:/oauth/authorize
-pathInfo:null
-headers: 
-host: localhost:9999
-connection: keep-alive
-cache-control: max-age=0
-upgrade-insecure-requests: 1
-user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
-referer: http://localhost:9999/uaa/login
-accept-encoding: gzip, deflate, br
-accept-language: en-CA,en-GB;q=0.8,en-US;q=0.6,en;q=0.4
-cookie: JSESSIONID=63C2FD40B654E081E6129D25AB4A0C4C; JSESSIONID=1BA6CC26FCAEEBE6212E9E3EDEF6A5C3
-
-
-Security filter chain: [
-  WebAsyncManagerIntegrationFilter
-  SecurityContextPersistenceFilter
-  HeaderWriterFilter
-  CsrfFilter
-  LogoutFilter
-  UsernamePasswordAuthenticationFilter
-  RequestCacheAwareFilter
-  SecurityContextHolderAwareRequestFilter
-  AnonymousAuthenticationFilter
-  SessionManagementFilter
-  ExceptionTranslationFilter
-  FilterSecurityInterceptor
-]
-
-
-************************************************************
-
-
-2017-10-25 01:58:08.145 DEBUG 1100 --- [nio-9999-exec-7] .s.o.p.e.FrameworkEndpointHandlerMapping : Looking up handler method for path /oauth/authorize
-2017-10-25 01:58:08.146 DEBUG 1100 --- [nio-9999-exec-7] .s.o.p.e.FrameworkEndpointHandlerMapping : Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.authorize(java.util.Map<java.lang.String, java.lang.Object>,java.util.Map<java.lang.String, java.lang.String>,org.springframework.web.bind.support.SessionStatus,java.security.Principal)]
-2017-10-25 01:58:08.233 DEBUG 1100 --- [nio-9999-exec-7] .s.s.o.p.a.TokenStoreUserApprovalHandler : Looking up existing token for client_id=trusted-app, scope=[read, write] and username=user
-2017-10-25 01:58:08.233 DEBUG 1100 --- [nio-9999-exec-7] .s.s.o.p.a.TokenStoreUserApprovalHandler : Existing access token=null
-2017-10-25 01:58:08.233 DEBUG 1100 --- [nio-9999-exec-7] .s.s.o.p.a.TokenStoreUserApprovalHandler : Checking explicit approval
-2017-10-25 01:58:08.233 DEBUG 1100 --- [nio-9999-exec-7] o.s.s.o.p.e.AuthorizationEndpoint        : Loading user approval page: forward:/oauth/confirm_access
-2017-10-25 01:58:08.245  INFO 1100 --- [nio-9999-exec-7] Spring Security Debugger                 : 
-
-************************************************************
-
-Request received for GET '/oauth/confirm_access?client_id=trusted-app&redirect_uri=http://localhost:8080/login&response_type=code&state=3DiQLr':
-
-SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.savedrequest.SavedRequestAwareWrapper@8dcaa74]
-
-servletPath:/oauth/confirm_access
-pathInfo:null
-headers: 
-accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
-accept-encoding: gzip, deflate, br
-accept-language: en-CA,en-GB;q=0.8,en-US;q=0.6,en;q=0.4
-connection: keep-alive
-cookie: JSESSIONID=E314DFBAC67BE87C54B9F64C3089D60C; JSESSIONID=1BA6CC26FCAEEBE6212E9E3EDEF6A5C3
-host: localhost:9999
-upgrade-insecure-requests: 1
-user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-
-
-Security filter chain: [
-  WebAsyncManagerIntegrationFilter
-  SecurityContextPersistenceFilter
-  HeaderWriterFilter
-  CsrfFilter
-  LogoutFilter
-  UsernamePasswordAuthenticationFilter
-  RequestCacheAwareFilter
-  SecurityContextHolderAwareRequestFilter
-  AnonymousAuthenticationFilter
-  SessionManagementFilter
-  ExceptionTranslationFilter
-  FilterSecurityInterceptor
-]
-
-
-************************************************************
-
-
-2017-10-25 01:58:08.249 DEBUG 1100 --- [nio-9999-exec-7] .s.o.p.e.FrameworkEndpointHandlerMapping : Looking up handler method for path /oauth/confirm_access
-2017-10-25 01:58:08.250 DEBUG 1100 --- [nio-9999-exec-7] .s.o.p.e.FrameworkEndpointHandlerMapping : Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelApprovalEndpoint.getAccessConfirmation(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletRequest) throws java.lang.Exception]
-2017-10-25 01:58:09.921  INFO 1100 --- [nio-9999-exec-8] Spring Security Debugger                 : 
-
-************************************************************
-
-Request received for POST '/oauth/authorize':
-
-org.apache.catalina.connector.RequestFacade@1dc14676
-
-servletPath:/oauth/authorize
-pathInfo:null
-headers: 
-host: localhost:9999
-connection: keep-alive
-content-length: 87
-cache-control: max-age=0
-origin: http://localhost:9999
-upgrade-insecure-requests: 1
-content-type: application/x-www-form-urlencoded
-user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
-referer: http://localhost:9999/uaa/oauth/authorize?client_id=trusted-app&redirect_uri=http://localhost:8080/login&response_type=code&state=3DiQLr
-accept-encoding: gzip, deflate, br
-accept-language: en-CA,en-GB;q=0.8,en-US;q=0.6,en;q=0.4
-cookie: JSESSIONID=63C2FD40B654E081E6129D25AB4A0C4C; JSESSIONID=1BA6CC26FCAEEBE6212E9E3EDEF6A5C3
-
-
-Security filter chain: [
-  WebAsyncManagerIntegrationFilter
-  SecurityContextPersistenceFilter
-  HeaderWriterFilter
-  CsrfFilter
-  LogoutFilter
-  UsernamePasswordAuthenticationFilter
-  RequestCacheAwareFilter
-  SecurityContextHolderAwareRequestFilter
-  AnonymousAuthenticationFilter
-  SessionManagementFilter
-  ExceptionTranslationFilter
-  FilterSecurityInterceptor
-]
-
-
-************************************************************
-
-
-2017-10-25 01:58:09.926 DEBUG 1100 --- [nio-9999-exec-8] .s.o.p.e.FrameworkEndpointHandlerMapping : Looking up handler method for path /oauth/authorize
-2017-10-25 01:58:09.968 DEBUG 1100 --- [nio-9999-exec-8] .s.o.p.e.FrameworkEndpointHandlerMapping : Returning handler method [public org.springframework.web.servlet.View org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.approveOrDeny(java.util.Map<java.lang.String, java.lang.String>,java.util.Map<java.lang.String, ?>,org.springframework.web.bind.support.SessionStatus,java.security.Principal)]
-2017-10-25 01:58:10.681  INFO 1100 --- [io-9999-exec-10] Spring Security Debugger                 : 
-
-************************************************************
-
-Request received for POST '/oauth/token':
-
-org.apache.catalina.connector.RequestFacade@1dc14676
-
-servletPath:/oauth/token
-pathInfo:null
-headers: 
-authorization: Basic dHJ1c3RlZC1hcHA6c2VjcmV0
-accept: application/json, application/x-www-form-urlencoded
-content-type: application/x-www-form-urlencoded
-cache-control: no-cache
-pragma: no-cache
-user-agent: Java/1.8.0_101
-host: localhost:9999
-connection: keep-alive
-content-length: 92
-
-
-Security filter chain: [
-  WebAsyncManagerIntegrationFilter
-  SecurityContextPersistenceFilter
-  HeaderWriterFilter
-  LogoutFilter
-  BasicAuthenticationFilter
-  RequestCacheAwareFilter
-  SecurityContextHolderAwareRequestFilter
-  AnonymousAuthenticationFilter
-  SessionManagementFilter
-  ExceptionTranslationFilter
-  FilterSecurityInterceptor
-]
-
-
-************************************************************
-
-
-2017-10-25 01:58:10.803 DEBUG 1100 --- [io-9999-exec-10] .s.o.p.e.FrameworkEndpointHandlerMapping : Looking up handler method for path /oauth/token
-2017-10-25 01:58:10.803 DEBUG 1100 --- [io-9999-exec-10] .s.o.p.e.FrameworkEndpointHandlerMapping : Returning handler method [public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException]
-2017-10-25 01:58:10.806 DEBUG 1100 --- [io-9999-exec-10] o.s.s.o.provider.endpoint.TokenEndpoint  : Clearing scope of incoming token request
-2017-10-25 01:58:10.827 DEBUG 1100 --- [io-9999-exec-10] .s.s.o.p.c.AuthorizationCodeTokenGranter : Getting access token for: trusted-app
-2017-10-25 01:58:11.149  INFO 1100 --- [io-9999-exec-10] .s.a.AnnotationAsyncExecutionInterceptor : No task executor bean found for async processing: no bean of type TaskExecutor and no bean named 'taskExecutor' either
-2017-10-25 01:58:12.089  INFO 1100 --- [nio-9999-exec-9] Spring Security Debugger                 : 
-
-************************************************************
-
-Request received for GET '/api/me':
-
-org.apache.catalina.connector.RequestFacade@1dc14676
-
-servletPath:/api/me
-pathInfo:null
-headers: 
-authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib2F1dGgyX2lkIl0sInVzZXJfbmFtZSI6InVzZXIiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNTA4OTU0MjkwLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiMjEzMWNiYTUtY2NkZi00YzVhLThlNGUtMDI0MTViZTZkYzczIiwiY2xpZW50X2lkIjoidHJ1c3RlZC1hcHAifQ.gA_Bc2eSShfpUoCxapzaYKiiS9o-oO_YRrZtNjwP8rShegMpLQWpE4DPpK19Bm2-YdAcfX9smsTbxoEZU13lIAFfK2cABZvxEWp4rBxnp7Nzt8IOuL18F1st6VhRLYaIfbDYBLAmSrNTwwbgMjHWu29-F7EhCySv1EqWuS6P_AQak7kAhJ4xi2roGQzgYSMzAAgtqJ0Ty37KhO_urrrzejr_XNktslxg97V20oyLz5kwilKen45mgZArsnAe31uA3uzEXSVSE4-ZvoTq8S-BMI2wWFBRqZfpqnw9UWlG0yXSBponFJMnWrUpWlb_Td5WMjJnAU6dpLM61i5Z9rE5KQ
-accept: application/json
-user-agent: Java/1.8.0_101
-host: localhost:9999
-connection: keep-alive
-
-
-Security filter chain: [
-  WebAsyncManagerIntegrationFilter
-  SecurityContextPersistenceFilter
-  HeaderWriterFilter
-  LogoutFilter
-  OAuth2AuthenticationProcessingFilter
-  RequestCacheAwareFilter
-  SecurityContextHolderAwareRequestFilter
-  SessionManagementFilter
-  ExceptionTranslationFilter
-  FilterSecurityInterceptor
-]
-
-
-************************************************************
-
-
-2017-10-25 01:58:12.176 DEBUG 1100 --- [nio-9999-exec-9] p.a.OAuth2AuthenticationProcessingFilter : Authentication success: org.springframework.security.oauth2.provider.OAuth2Authentication@dfc58223: Principal: user; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=127.0.0.1, tokenType=bearertokenValue=<TOKEN>; Granted Authorities: ROLE_USER
+2017-10-25 21:29:21.769  INFO 9904 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-25 21:29:21.773  INFO 9904 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-10-25 21:29:21.777  INFO 9904 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-10-25 21:29:21.933  INFO 9904 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-25 21:29:22.441  INFO 9904 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-25 21:29:23.134  WARN 9904 --- [           main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-10-25 21:29:23.729  INFO 9904 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-10-25 21:29:23.783  INFO 9904 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-10-25 21:29:23.930  INFO 9904 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-25 21:29:24.581  INFO 9904 --- [           main] o.s.aop.framework.CglibAopProxy          : Final method [protected final org.springframework.core.env.Environment org.springframework.boot.actuate.endpoint.mvc.AbstractMvcEndpoint.getEnvironment()] cannot get proxied via CGLIB: Calls to this method will NOT be routed to the target instance and might lead to NPEs against uninitialized fields in the proxy instance.
+2017-10-25 21:29:26.727  INFO 9904 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/authorize]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.authorize(java.util.Map<java.lang.String, java.lang.Object>,java.util.Map<java.lang.String, java.lang.String>,org.springframework.web.bind.support.SessionStatus,java.security.Principal)
+2017-10-25 21:29:26.729  INFO 9904 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/authorize],methods=[POST],params=[user_oauth_approval]}" onto public org.springframework.web.servlet.View org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.approveOrDeny(java.util.Map<java.lang.String, java.lang.String>,java.util.Map<java.lang.String, ?>,org.springframework.web.bind.support.SessionStatus,java.security.Principal)
+2017-10-25 21:29:26.730  INFO 9904 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/token],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.getAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2017-10-25 21:29:26.730  INFO 9904 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/token],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2017-10-25 21:29:26.730  INFO 9904 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/check_token]}" onto public java.util.Map<java.lang.String, ?> org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint.checkToken(java.lang.String)
+2017-10-25 21:29:26.731  INFO 9904 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/confirm_access]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelApprovalEndpoint.getAccessConfirmation(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2017-10-25 21:29:26.731  INFO 9904 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/error]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelErrorEndpoint.handleError(javax.servlet.http.HttpServletRequest)
+2017-10-25 21:29:26.735  INFO 9904 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/token_key],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.security.oauth2.provider.endpoint.TokenKeyEndpoint.getKey(java.security.Principal)
+2017-10-25 21:29:29.299  INFO 9904 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a2e2935, org.springframework.security.web.context.SecurityContextPersistenceFilter@56102e1c, org.springframework.security.web.header.HeaderWriterFilter@1095f122, org.springframework.security.web.authentication.logout.LogoutFilter@617fe9e1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@42257bdd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7927bd9f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fb9f71f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@733c423e, org.springframework.security.web.session.SessionManagementFilter@3d6300e8, org.springframework.security.web.access.ExceptionTranslationFilter@67427b69, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10b892d5]
+2017-10-25 21:29:29.306  INFO 9904 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4108fa66, org.springframework.security.web.context.SecurityContextPersistenceFilter@71f67a79, org.springframework.security.web.header.HeaderWriterFilter@4263b080, org.springframework.security.web.authentication.logout.LogoutFilter@7889a1ac, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3aee3976, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3deb2326, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62d363ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f130eaf, org.springframework.security.web.session.SessionManagementFilter@2af616d3, org.springframework.security.web.access.ExceptionTranslationFilter@5922ae77, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5910de75]
+2017-10-25 21:29:29.464  INFO 9904 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create-account],methods=[POST],consumes=[application/x-www-form-urlencoded;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.paytm.oauth2.controller.AccountController.registerAccount(com.paytm.oauth2.pojo.Account,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-10-25 21:29:29.464  INFO 9904 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/change_password],methods=[POST],consumes=[application/x-www-form-urlencoded;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.paytm.oauth2.controller.GeneralController$RestMsg> com.paytm.oauth2.controller.AccountController.changePassword(com.paytm.oauth2.pojo.ChangePassword,java.security.Principal,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-10-25 21:29:29.464  INFO 9904 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete-account]}" onto public org.springframework.http.ResponseEntity<com.paytm.oauth2.controller.GeneralController$RestMsg> com.paytm.oauth2.controller.AccountController.removeAccount(java.security.Principal)
+2017-10-25 21:29:29.465  INFO 9904 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/me]}" onto public java.security.Principal com.paytm.oauth2.controller.GeneralController.user(java.security.Principal)
+2017-10-25 21:29:29.465  INFO 9904 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public com.paytm.oauth2.controller.GeneralController$RestMsg com.paytm.oauth2.controller.GeneralController.hello()
+2017-10-25 21:29:29.468  INFO 9904 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register]}" onto public java.lang.String com.paytm.oauth2.controller.MVCController.register(java.lang.String,org.springframework.ui.Model)
+2017-10-25 21:29:29.468  INFO 9904 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/change-password]}" onto public java.lang.String com.paytm.oauth2.controller.MVCController.changePassword(java.lang.String,org.springframework.ui.Model)
+2017-10-25 21:29:29.468  INFO 9904 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.paytm.oauth2.controller.MVCController.login(java.lang.String,org.springframework.ui.Model)
+2017-10-25 21:29:29.474  INFO 9904 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-25 21:29:29.474  INFO 9904 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-25 21:29:29.607  INFO 9904 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-25 21:29:29.608  INFO 9904 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-25 21:29:29.700  INFO 9904 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-25 21:29:30.813  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2017-10-25 21:29:30.814  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-10-25 21:29:30.814  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-10-25 21:29:30.815  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-25 21:29:30.816  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-25 21:29:30.817  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2017-10-25 21:29:30.817  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-25 21:29:30.818  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-10-25 21:29:30.818  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-25 21:29:30.820  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-10-25 21:29:30.820  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-25 21:29:30.821  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-10-25 21:29:30.823  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2017-10-25 21:29:30.825  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2017-10-25 21:29:30.826  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2017-10-25 21:29:30.826  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-25 21:29:30.827  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-25 21:29:30.827  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-25 21:29:30.828  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-25 21:29:30.829  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2017-10-25 21:29:30.829  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2017-10-25 21:29:30.830  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-25 21:29:30.831  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-10-25 21:29:30.831  INFO 9904 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-25 21:29:30.844  INFO 9904 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@6b7d1df8, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3044e9c7, org.springframework.security.web.context.SecurityContextPersistenceFilter@71a9b4c7, org.springframework.security.web.header.HeaderWriterFilter@1494b84d, org.springframework.web.filter.CorsFilter@41d7b27f, org.springframework.security.web.authentication.logout.LogoutFilter@1df98368, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1a6f2363, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4628b1d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77cf3f8b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49096b06, org.springframework.security.web.session.SessionManagementFilter@34abdee4, org.springframework.security.web.access.ExceptionTranslationFilter@655a5d9c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@681aad3b]
+2017-10-25 21:29:30.900  INFO 9904 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: com.paytm.oauth2.config.ResourceConfig$OAuthRequestedMatcher@267bbe1a, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f12e153, org.springframework.security.web.context.SecurityContextPersistenceFilter@23cd4ff2, org.springframework.security.web.header.HeaderWriterFilter@4159e81b, org.springframework.security.web.authentication.logout.LogoutFilter@400d912a, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@73d69c0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70807224, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e97551f, org.springframework.security.web.session.SessionManagementFilter@5b5caf08, org.springframework.security.web.access.ExceptionTranslationFilter@40226788, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@aed0151]
+2017-10-25 21:29:30.976  INFO 9904 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bff19ff, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d3e6d34, org.springframework.security.web.header.HeaderWriterFilter@6d64b553, org.springframework.security.web.csrf.CsrfFilter@57bd2029, org.springframework.security.web.authentication.logout.LogoutFilter@464a4442, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2e1792e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6eafb10e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26a94fa5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41e1455d, org.springframework.security.web.session.SessionManagementFilter@53667cbe, org.springframework.security.web.access.ExceptionTranslationFilter@e8fadb0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3aefae67]
+2017-10-25 21:29:32.758  INFO 9904 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f28c152: startup date [Wed Oct 25 21:29:15 EDT 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1
+2017-10-25 21:29:38.358  INFO 9904 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-25 21:29:38.390  INFO 9904 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-10-25 21:29:38.391  INFO 9904 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2017-10-25 21:29:38.393  INFO 9904 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2017-10-25 21:29:38.394  INFO 9904 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-10-25 21:29:38.396  INFO 9904 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-10-25 21:29:38.406  INFO 9904 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-10-25 21:29:38.445  INFO 9904 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2017-10-25 21:29:38.495  INFO 9904 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-10-25 21:29:38.536  INFO 9904 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1f28c152,type=ConfigurationPropertiesRebinder]
+2017-10-25 21:29:38.575  INFO 9904 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2017-10-25 21:29:38.938  INFO 9904 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-10-25 21:29:39.366  INFO 9904 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9999 (http)
+2017-10-25 21:29:39.435  INFO 9904 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 21:29:40.421  INFO 9904 --- [           main] com.paytm.Oauth2Application              : Started Oauth2Application in 27.031 seconds (JVM running for 27.589)

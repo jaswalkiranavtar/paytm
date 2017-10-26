@@ -1,12 +1,13 @@
 Steps to run:
 1. Make sure you have Java 8 and maven installed.
-2. Run this script in bash shell(I use git bash): paytm/build-and-run/all.sh
-3. Following apps will start up:
+2. Goto folder: paytm/build-and-run
+3. Run this script in bash shell(I use git bash): ./all.sh
+4. Following apps will start up:
 	(a) OAuth2 server on port 9999
 	(b) User activity logger on port 7777
 	(c) UI app on port 8080
-4. Hit this endpoint to access App: http://localhost:8080/ui/
-5. Following are the other functionalities:
+5. Hit this endpoint to access App: http://localhost:8080/ui/index.html
+6. Following are the other functionalities:
 	(a) Change Password Endpoint: http://localhost:9999/uaa/change-password
 	(b) Register New User: Found on the login page
 	(c) All user activity history: http://user:logger@localhost:7777/event?user={username}
@@ -19,3 +20,5 @@ Technologies choosen:
 3. Spring Data JPA and H2 in-memory database to store user creds. The reason I added the endpoint to change password on oauth server is that, it uses in-memory database to store credentials and any external service or process cannot access it.
 
 4. Spring AOP: To centrally manage logging of all user actions in all apps. Infact I added the Aspect to common folder so that both UI app and oauth2 server can use it. In practice it should be a seperate module in the form of jar file that any other app can use.
+
+5. UI: Mixture of Angular and JQuery. If I had more time, I would have used Angular 4 and Google's Material Design, to use compoenents from Angular Material IO.
