@@ -10,11 +10,13 @@
 <body ng-app="searchApp">
 <div>
     <div ng-controller="tweetsCtrl" class="ng-scope">
-    	<button ng-click="auth()">Connect</button><br><br>
+    	<button ng-click="auth()">Connect to Twitter</button><br><br>
 		<form novalidate>
-	    	<input type="text" ng-model="query"><br>
+	    	<input type="text" ng-model="query" placeholder="What tweets are you looking for?">
 	    	<button ng-click="search()">SEARCH</button>
 	  	</form>
+	  	<br>
+	  	<button ng-click="feelingLucky()">I'm feeling lucky</button>
         <result-panel></result-panel>
         <div class="all-links">
         	<all-tabs></all-tabs>

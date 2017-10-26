@@ -21,4 +21,4 @@ Technologies choosen:
 
 4. Spring AOP: To centrally manage logging of all user actions in all apps. Infact I added the Aspect to common folder so that both UI app and oauth2 server can use it. In practice it should be a seperate module in the form of jar file that any other app can use.
 
-5. UI: Mixture of Angular and JQuery. If I had more time, I would have used Angular 4 and Google's Material Design, to use compoenents from Angular Material IO.
+5. UI: Mixture of Angular and JQuery. And Spring Social Twitter API.

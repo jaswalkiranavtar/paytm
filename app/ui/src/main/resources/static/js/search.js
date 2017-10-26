@@ -7,10 +7,29 @@ app.controller('tweetsCtrl', function($scope, $timeout) {
 		authWindow = window.open('/ui/auth-popup.html', '', 'width=400,height=300');
 	};
 	$scope.query = "";
+	$scope.uri = "";
 	$scope.searchResults = []
 	$scope.filtered = []
 	
-    $scope.search = function() {
+	$scope.feelingLucky = function() {
+		fetch('http://setgetgo.com/randomword/get.php', {
+            method : 'GET'
+        })
+        .then(function(response) {
+        	response.text().then(function(result) {
+        		$scope.uri = '/ui/search-twitter?query=' + result.substring(0, 2)
+        		$scope.callTwitter()
+        	});
+        });
+		
+	}
+	
+	$scope.search = function() {
+		$scope.uri = '/ui/search-twitter?query=' + $scope.query
+		$scope.callTwitter()
+	}
+	
+    $scope.callTwitter = function() {
         
         if(document.getElementById("danger"))
             document.getElementById("danger").style.display = 'none'
@@ -20,7 +39,6 @@ app.controller('tweetsCtrl', function($scope, $timeout) {
         if(document.getElementById("linksTableClass"))
             document.getElementById("linksTableClass").style.display = "none"
         
-        if (angular.equals($scope.searchResults, [])) {
         	fetch('/ui/search-twitter?query=' + $scope.query, {
                 method : 'GET',
                 credentials : 'same-origin',
@@ -68,12 +86,7 @@ app.controller('tweetsCtrl', function($scope, $timeout) {
                 document.getElementById("success").style.display = 'none'
                 document.getElementById("loader").style.display = "none"
             });
-        } else {
-            document.getElementById("linksTableClass").style.display = "table"
-            document.getElementById("success").style.display = 'block'
-            document.getElementById("danger").style.display = 'none'
-            document.getElementById("loader").style.display = "none"
-        }
+        
     }
     
     $scope.loadGrid = function(data) {
